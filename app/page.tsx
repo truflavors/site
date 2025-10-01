@@ -16,6 +16,7 @@ import GoalStrip from "@/components/home/GoalStrip";
 import Guarantee from "@/components/home/Guarantee";
 import BadgesMarquee from "@/components/home/BadgesMarquee";
 import StickyCTA from "@/components/home/StickyCTA";
+import HeroCard from "@/components/HeroCard";
 
 export const revalidate = 3600;
 
@@ -53,6 +54,17 @@ export default function Page() {
       <section className="container-max mt-12"><RegionalTiles /></section>
 
       <StickyCTA />
+    </main>
+  );
+}
+
+
+
+export default function Page() {
+  return (
+    <main>
+      <HeroCard />
+      {/* keep the rest of your page sections below */}
     </main>
   );
 }
