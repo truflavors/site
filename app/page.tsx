@@ -41,7 +41,7 @@ export default function Page() {
       <HeroV4 />
       <section className="relative"><BadgesMarquee /></section>
 
-
+      <HeroCard />
       <section className="container-max mt-12"><CultureTeaser /></section>
       <section className="container-max mt-12"><MiniTestimonials /></section>      
       <section className="container-max mt-12"><ImpactRow /></section>
@@ -59,15 +59,6 @@ export default function Page() {
 }
 
 
-
-export default function Page() {
-  return (
-    <main>
-      <HeroCard />
-      {/* keep the rest of your page sections below */}
-    </main>
-  );
-}
 
 
 
