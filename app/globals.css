@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --brand-900: #0E1A1C;
+  --brand-700: #B74A2E;
+  --brand-500: #E5B48A;
+  --bg: #F6F1EC;
+  --muted: #7C9A92;
+  --white: #FFFFFF;
+  --ink: #0F172A;
+}
+body { color: var(--ink); background: var(--bg); }
+
+
 html, body { height: 100%; }
 body { color:#0F172A; background:#fff; }
 
