@@ -18,7 +18,7 @@ html, body { height: 100%; }
 body { color:#0F172A; background:#fff; }
 
 .container-max { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
-.badge { @apply inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-brand/10 text-brand; }
+.badge { display:inline-flex; align-items:center; border-radius:9999px; padding:0.25rem 0.75rem; font-size:0.875rem; font-weight:600; background-color: rgba(183,74,46,0.08); color: var(--brand-700); }
 .card { @apply rounded-2xl shadow-soft bg-white border border-gray-100; }
 .btn { @apply inline-flex items-center justify-center rounded-xl px-4 py-2 font-semibold transition; }
 .btn-primary { @apply inline-flex items-center justify-center rounded-xl px-4 py-2 font-semibold bg-brand text-white hover:opacity-90 shadow-soft focus-ring; }
@@ -26,7 +26,7 @@ body { color:#0F172A; background:#fff; }
 .kicker { @apply tracking-wider uppercase text-xs font-semibold text-brand; }
 .lead { @apply text-lg text-gray-700; }
 
-.focus-ring { @apply outline-none ring-2 ring-brand/30 ring-offset-2 ring-offset-white; }
+.focus-ring { @apply outline-none ring-2 ring-brand-30 ring-offset-2 ring-offset-white; }
 
 .section { @apply container-max py-16; }
 
