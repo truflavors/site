@@ -1,13 +1,21 @@
+// components/home/FeaturedProducts.tsx
 
 import { ProductCard } from "@/components/ProductCard";
+import { products } from "@/data/products";
+
 export default function FeaturedProducts() {
+  const featured = products.slice(0, 3); // simple for now
+
   return (
-    <section className="py-12 container-max">
-      <h2 className="text-2xl font-bold text-ink mb-6">Featured products</h2>
+    <section className="container-max py-10">
+      <h2 className="text-2xl font-bold text-ink mb-6">
+        Featured products
+      </h2>
+
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <ProductCard p={{id:'tomato-masala',name:'Tomato Masala',price:7.99,image:'/images/ingredients/hero.jpg',category:'ready-to-cook-gravy'}} />
-        <ProductCard p={{id:'coconut-curry',name:'Coconut Curry',price:8.49,image:'/images/ingredients/hero.jpg',category:'ready-to-cook-gravy'}} />
-        <ProductCard p={{id:'smoky-tomato',name:'Smoky Tomato',price:6.99,image:'/images/ingredients/hero.jpg',category:'ready-to-cook-gravy'}} />
+        {featured.map((p) => (
+          <ProductCard key={p.id} p={p} />
+        ))}
       </div>
     </section>
   );
