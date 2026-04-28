@@ -43,8 +43,13 @@ export default function ProductsPage({ searchParams }: Props) {
 
   // sort
   switch (sort) {
-    case "price-asc": list.sort((a, b) => a.price - b.price); break;
-    case "price-desc": list.sort((a, b) => b.price - a.price); break;
+case "price-asc":
+  list.sort((a, b) => (a.price ?? 9999) - (b.price ?? 9999));
+  break;
+
+case "price-desc":
+  list.sort((a, b) => (b.price ?? 0) - (a.price ?? 0));
+  break;
     case "name": list.sort((a, b) => a.name.localeCompare(b.name)); break;
     // "pop" -> no op
   }
