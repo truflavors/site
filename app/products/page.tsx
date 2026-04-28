@@ -1,7 +1,7 @@
 // app/products/page.tsx
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import ProductCard from "@/components/ProductCard";
+import { ProductCard } from "@/components/ProductCard";
 import FilterSection from "@/components/products/FilterSection";
 import { products, ALL_CATEGORIES, type Product as ProductType } from "@/data/products";
 
