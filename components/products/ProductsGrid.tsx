@@ -1,6 +1,7 @@
 "use client";
 import Filters from "@/components/products/Filters";
-import { ProductCard, Product } from "@/components/ProductCard";
+import { ProductCard } from "@/components/ProductCard";
+import type { Product } from "@/data/products";
 import { useSearchParams } from "next/navigation";
 
 function matchesFilters(p: any, active: string[]) {
