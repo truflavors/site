@@ -1,5 +1,5 @@
 
-import ProductCard from '@/components/ProductCard';
+import { ProductCard } from "@/components/ProductCard";
 export default function FeaturedProducts() {
   return (
     <section className="py-12 container-max">
