@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import type { Product } from "@/components/ProductCard";
+import type { Product } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
 
 function prettyLabel(s: string) {
