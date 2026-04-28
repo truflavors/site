@@ -26,8 +26,9 @@ export default function ProductsGrid({ products }: { products: Product[] }) {
   } else if (goal === "digestive") {
     filtered = filtered.filter(p => (p.vegetarian ?? false) || p.tags?.includes("mild"));
   } else if (goal === "weight") {
-    filtered = filtered.filter(p => (p.nutrition?.calories ?? 999) <= 180 && (p.nutrition?.fat ?? 999) <= 7);
-  }
+  // TEMP: no nutrition data yet
+  filtered = filtered;
+}
 
   return (
     <div>
